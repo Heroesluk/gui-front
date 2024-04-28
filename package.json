@@ -12,6 +12,12 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.24.4",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/types": "^7.2.14",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "babel-jest": "^29.7.0",

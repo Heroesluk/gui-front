@@ -1,0 +1,252 @@
+[
+    {
+        "timestamp": "2024-04-28T12:00:51.476767",
+        "recieved": 4,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:52.520922",
+        "recieved": 6,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:53.563397",
+        "recieved": 3,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:54.608591",
+        "recieved": 4,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:55.641193",
+        "recieved": 4,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:56.683842",
+        "recieved": 8,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:57.730709",
+        "recieved": 7,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:00:58.783752",
+        "recieved": 774,
+        "sent": 32
+    },
+    {
+        "timestamp": "2024-04-28T12:00:59.872630",
+        "recieved": 1200,
+        "sent": 19
+    },
+    {
+        "timestamp": "2024-04-28T12:01:00.936811",
+        "recieved": 6,
+        "sent": 5
+    },
+    {
+        "timestamp": "2024-04-28T12:01:01.978260",
+        "recieved": 839,
+        "sent": 40
+    },
+    {
+        "timestamp": "2024-04-28T12:01:03.030533",
+        "recieved": 719,
+        "sent": 11
+    },
+    {
+        "timestamp": "2024-04-28T12:01:04.077580",
+        "recieved": 1516,
+        "sent": 44
+    },
+    {
+        "timestamp": "2024-04-28T12:01:05.153889",
+        "recieved": 309,
+        "sent": 23
+    },
+    {
+        "timestamp": "2024-04-28T12:01:06.209449",
+        "recieved": 852,
+        "sent": 24
+    },
+    {
+        "timestamp": "2024-04-28T12:01:07.256300",
+        "recieved": 801,
+        "sent": 7
+    },
+    {
+        "timestamp": "2024-04-28T12:01:08.320311",
+        "recieved": 4,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:01:09.376690",
+        "recieved": 59,
+        "sent": 3
+    },
+    {
+        "timestamp": "2024-04-28T12:01:10.423077",
+        "recieved": 169,
+        "sent": 23
+    },
+    {
+        "timestamp": "2024-04-28T12:01:11.482994",
+        "recieved": 1335,
+        "sent": 23
+    },
+    {
+        "timestamp": "2024-04-28T12:01:12.583422",
+        "recieved": 10,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:01:13.652049",
+        "recieved": 1065,
+        "sent": 48
+    },
+    {
+        "timestamp": "2024-04-28T12:01:14.709691",
+        "recieved": 656,
+        "sent": 26
+    },
+    {
+        "timestamp": "2024-04-28T12:01:15.768781",
+        "recieved": 138,
+        "sent": 7
+    },
+    {
+        "timestamp": "2024-04-28T12:01:16.817330",
+        "recieved": 3,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:01:17.879929",
+        "recieved": 349,
+        "sent": 29
+    },
+    {
+        "timestamp": "2024-04-28T12:01:18.937889",
+        "recieved": 910,
+        "sent": 32
+    },
+    {
+        "timestamp": "2024-04-28T12:01:19.985441",
+        "recieved": 649,
+        "sent": 30
+    },
+    {
+        "timestamp": "2024-04-28T12:01:21.044242",
+        "recieved": 277,
+        "sent": 20
+    },
+    {
+        "timestamp": "2024-04-28T12:01:22.098623",
+        "recieved": 947,
+        "sent": 23
+    },
+    {
+        "timestamp": "2024-04-28T12:01:23.148841",
+        "recieved": 2,
+        "sent": 0
+    },
+    {
+        "timestamp": "2024-04-28T12:01:24.189695",
+        "recieved": 3,
+        "sent": 11
+    },
+    {
+        "timestamp": "2024-04-28T12:01:25.243286",
+        "recieved": 957,
+        "sent": 27
+    },
+    {
+        "timestamp": "2024-04-28T12:01:26.293814",
+        "recieved": 6,
+        "sent": 1
+    },
+    {
+        "timestamp": "2024-04-28T12:01:27.355389",
+        "recieved": 236,
+        "sent": 4
+    },
+    {
+        "timestamp": "2024-04-28T12:01:28.422343",
+        "recieved": 91,
+        "sent": 2
+    },
+    {
+        "timestamp": "2024-04-28T12:01:29.480373",
+        "recieved": 2,
+        "sent": 9
+    },
+    {
+        "timestamp": "2024-04-28T12:01:30.528941",
+        "recieved": 910,
+        "sent": 37
+    },
+    {
+        "timestamp": "2024-04-28T12:01:31.585355",
+        "recieved": 46,
+        "sent": 12
+    },
+    {
+        "timestamp": "2024-04-28T12:01:32.648488",
+        "recieved": 162,
+        "sent": 20
+    },
+    {
+        "timestamp": "2024-04-28T12:01:33.711162",
+        "recieved": 722,
+        "sent": 24
+    },
+    {
+        "timestamp": "2024-04-28T12:01:34.764191",
+        "recieved": 695,
+        "sent": 35
+    },
+    {
+        "timestamp": "2024-04-28T12:01:35.850140",
+        "recieved": 623,
+        "sent": 34
+    },
+    {
+        "timestamp": "2024-04-28T12:01:36.911155",
+        "recieved": 888,
+        "sent": 16
+    },
+    {
+        "timestamp": "2024-04-28T12:01:37.957115",
+        "recieved": 216,
+        "sent": 2
+    },
+    {
+        "timestamp": "2024-04-28T12:01:39.005900",
+        "recieved": 15,
+        "sent": 4
+    },
+    {
+        "timestamp": "2024-04-28T12:01:40.048945",
+        "recieved": 2,
+        "sent": 3
+    },
+    {
+        "timestamp": "2024-04-28T12:01:41.115087",
+        "recieved": 88,
+        "sent": 8
+    },
+    {
+        "timestamp": "2024-04-28T12:01:42.193197",
+        "recieved": 429,
+        "sent": 33
+    },
+    {
+        "timestamp": "2024-04-28T12:01:43.259231",
+        "recieved": 795,
+        "sent": 36
+    }
+]

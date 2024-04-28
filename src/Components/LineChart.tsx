@@ -3,22 +3,38 @@ import {formatData} from "../Utils/formatDate.ts";
 
 
 interface CommonUsageChartProps {
-    data: { timestamp: string, usage: number }[];
+    data: DiskData[] | NetworkData[] | RamData[] | CpuData[];
+    line_keywords: string[]
+    colors: string[]
+    label: string
 }
 
-export const CommonUsageChart = (props: CommonUsageChartProps) => {
+export const CommonLineChart = (props: CommonUsageChartProps) => {
+    const data = formatData(props.data)
+    console.log(data)
+
     return (
-        <LineChart width={750} height={500} data={formatData(props.data)} margin={{bottom: 30}}>
-            <Line type="monotone" dataKey="usage" dot={false} stroke="#8884d8" strokeWidth={1.2}/>
-            <CartesianGrid stroke="#ccc"/>
-            <XAxis dataKey="timestamp" tick={false} padding={{left: 5, right: 5}}>
-                <Label value="Time" offset={0} position="insideBottom"/>
-            </XAxis>
-            <YAxis tickFormatter={(tick) => `${tick}%`} domain={[0, 100]}>
-                <Label value="CPU Usage (%)" angle={-90} position="insideLeft"/>
-            </YAxis>
-            <Tooltip/>
-        </LineChart>
+        <div className="">
+            <LineChart width={580} height={400} data={data} margin={{bottom: 30, right: 0, left: 20}}>
+                {props.line_keywords.map((keyword, index) =>
+                    <Line
+                        key={index}
+                        type="monotone"
+                        dataKey={keyword}
+                        dot={false}
+                        stroke={props.colors[index]}
+                        strokeWidth={2}
+                    />
+                )}
+                <CartesianGrid stroke="#ccc"/>
+                <XAxis dataKey="timestamp" tick={false} padding={{left: 5}}>
+                    <Label value={props.label} offset={0} position="insideBottom"/>
+                </XAxis>
+                <YAxis>
+                </YAxis>
+                <Tooltip/>
+            </LineChart>
+        </div>
+
     );
 }
-
