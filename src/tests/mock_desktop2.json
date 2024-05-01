@@ -1,0 +1,13 @@
+{
+  "system": "Linux",
+  "node": "DESKTOP-8T7FU57",
+  "release": "UBUNTU LTS 20",
+  "version": "20.6.1.24",
+  "machine": "AMD64",
+  "processor": "Intel(R) Core(TM) i7-8750u CPU @ 2.40GHz",
+  "physical_cores": 8,
+  "logical_cores": 16,
+  "cpu_freq": 2551.0,
+  "total_memory": 32924,
+  "total_disk_size": 1026937
+}

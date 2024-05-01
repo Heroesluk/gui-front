@@ -9,7 +9,9 @@ import Badge from "@mui/material/Badge";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 
+
 export function ButtonAppBar(props: BannerProps) {
+
     return (
         <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
@@ -46,7 +48,6 @@ export function ButtonAppBar(props: BannerProps) {
                             <AccountCircle/>
                         </IconButton>
                         <Button color="inherit">LOGOUT</Button>
-
 
                     </Box> : <Button color="inherit">LOGIN</Button>
                     }

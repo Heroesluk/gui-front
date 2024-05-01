@@ -1,0 +1,13 @@
+{
+  "system": "Windows",
+  "node": "DESKTOP-8T7FU57",
+  "release": "10",
+  "version": "10.0.19045",
+  "machine": "AMD64",
+  "processor": "Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz",
+  "physical_cores": 8,
+  "logical_cores": 8,
+  "cpu_freq": 2101.0,
+  "total_memory": 16975,
+  "total_disk_size": 476937
+}

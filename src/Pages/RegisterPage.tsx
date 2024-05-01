@@ -55,8 +55,6 @@ export const RegisterPage = () => {
                                 value={repeatPassword}
                                 onChange={(e) => setRepeatPassword(e.target.value)}
                             />
-
-
                             <Button variant="contained" color="primary" type="submit" fullWidth
                                     style={{marginTop: '1em'}}>
                                 Register

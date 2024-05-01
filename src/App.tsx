@@ -4,6 +4,7 @@ import {HomePage} from "./Pages/HomePage.tsx";
 import {LoginPage} from "./Pages/LoginPage.tsx";
 import {RegisterPage} from "./Pages/RegisterPage.tsx";
 import {DashboardPage} from "./Pages/DashboardPage.tsx";
+import {SystemInfoPage} from "./Pages/SystemInfoPage.tsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
                 <Route path="login" element={<LoginPage/>}/>
                 <Route path="register" element={<RegisterPage/>}/>
                 <Route path="dashboard" element={<DashboardPage/>}/>
+                <Route path="systemInfo" element={<SystemInfoPage/>}/>
 
             </Routes>
         </BrowserRouter>

@@ -22,6 +22,19 @@ interface CpuData {
 }
 
 interface BannerProps {
-
     loggedIn: boolean;
+}
+
+interface SystemInfo {
+    system: string;
+    node: string;
+    release: string;
+    version: string;
+    machine: string;
+    processor: string;
+    physical_cores: number;
+    logical_cores: number;
+    cpu_freq: number;
+    total_memory: number;
+    total_disk_size: number;
 }
