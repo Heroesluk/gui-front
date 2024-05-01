@@ -8,9 +8,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Badge from "@mui/material/Badge";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountCircle from "@mui/icons-material/AccountCircle";
+import {useNavigate} from "react-router-dom";
 
 
 export function ButtonAppBar(props: BannerProps) {
+    const navigate = useNavigate();
+
 
     return (
         <Box sx={{flexGrow: 1}}>
@@ -22,6 +25,7 @@ export function ButtonAppBar(props: BannerProps) {
                         color="inherit"
                         aria-label="menu"
                         sx={{mr: 2}}
+                        onClick={props.toggleDrawer}
                     >
                         <MenuIcon/>
                     </IconButton>
@@ -39,6 +43,9 @@ export function ButtonAppBar(props: BannerProps) {
                             </Badge>
                         </IconButton>
                         <IconButton
+                            onClick={() => {
+                                navigate("/")
+                            }}
                             size="large"
                             edge="end"
                             aria-label="account of current user"

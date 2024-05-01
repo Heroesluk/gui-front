@@ -23,6 +23,7 @@ interface CpuData {
 
 interface BannerProps {
     loggedIn: boolean;
+    toggleDrawer: any;
 }
 
 interface SystemInfo {
@@ -38,3 +39,4 @@ interface SystemInfo {
     total_memory: number;
     total_disk_size: number;
 }
+

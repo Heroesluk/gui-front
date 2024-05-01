@@ -1,5 +1,4 @@
-import {Typography} from "@mui/material";
-import {ButtonAppBar} from "../Components/TopBanner.tsx";
+import {Button, ButtonGroup, Paper, Typography} from "@mui/material";
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -7,37 +6,46 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import mockData from "../tests/mock_desktop.json";
+import mockData2 from "../tests/mock_desktop2.json";
 import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
+import {useState} from "react";
 
-export const SystemInfoPage = () => {
 
+export const SystemInfoComponent = () => {
     const dt: SystemInfo = mockData
+    const pcList: SystemInfo[] = [dt, mockData2]
+
+
+    const [curentPC, setCurrentPC] = useState<SystemInfo>(dt)
+
+    const setCurrentFromId = (pc: string) => {
+
+        pcList.forEach((item) => {
+            if (item.node === pc) {
+                setCurrentPC(item)
+            }``
+        })
+    }
 
 
     return <>
-        <ButtonAppBar loggedIn={true}/>
-        <SystemInfoComponent {...dt}/>
-    </>
-}
-
-export const SystemInfoComponent = (data: SystemInfo) => {
-
-    return <div className="flex flex-col items-left pt-24 w-full ml-96">
-        <div className="pl-1/3">
-            <div className="flex items-center space-x-2">
-                <DisplaySettingsIcon fontSize="large"/>
-                <Typography variant="h4">System info: </Typography>
-            </div>
-            <InfoList {...data} />
+        <div className="flex items-center space-x-2">
+            <DisplaySettingsIcon fontSize="large"/>
+            <Typography variant="h4">System info: </Typography>
         </div>
-    </div>
+        <Paper elevation={3} className="pt-0 pl-0 pr-10 pb-10 mt-5">
+            <PcSelectionGroup onClick={setCurrentFromId}></PcSelectionGroup>
+
+            <InfoList {...curentPC} />
+        </Paper>
+
+    </>
 }
 
 
 export function InfoList(data: SystemInfo) {
     return (
         <>
-            <BasicList></BasicList>
             <Box maxWidth={500}>
                 <nav aria-label="System">
                     <List>
@@ -104,29 +112,26 @@ export function InfoList(data: SystemInfo) {
             </Box>
         </>
     );
+}
+
+export interface PcSelectionGroupProps {
+    onClick: any
 
 }
 
-
-export const BasicList = () => {
-    const pcs = ["PC1", "PC2", "PC3"]
+export const PcSelectionGroup = (basicProps: PcSelectionGroupProps) => {
+    const pcs = ["DESKTOP-8T7FU57", "DESKTOP-ABCFU57", "DESKTOP-8T7FU57", "DESKTOP-ABCFU57", "DESKTOP-8T7FU57",]
 
     return (
-        <Box sx={{width: '100%', maxWidth: 360}}>
-            <nav aria-label="main mailbox folders">
-                <List>
-                    {
-                        pcs.map((pc) => {
-                            return <ListItem disablePadding>
-                                <ListItemButton>
-                                    <ListItemText primary={pc}/>
-                                </ListItemButton>
-                            </ListItem>
-                        })
-                    }
-                </List>
-            </nav>
+        <ButtonGroup fullWidth>
+            {
+                pcs.map((pc) => {
+                    return <Button onClick={() => {
+                        basicProps.onClick(pc)
+                    }}>{pc}</Button>
+                })
+            }
+        </ButtonGroup>
 
-        </Box>
     );
 }

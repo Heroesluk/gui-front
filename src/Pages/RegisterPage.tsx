@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import {Button, Paper, TextField, Typography} from '@mui/material';
-import {ButtonAppBar} from "../Components/TopBanner.tsx";
 
 export const RegisterPage = () => {
     const [username, setUsername] = useState('');
@@ -15,9 +14,6 @@ export const RegisterPage = () => {
 
     return (
         <>
-            <ButtonAppBar loggedIn={true}></ButtonAppBar>
-            <div className="flex flex-col items-center pt-10">
-                <div className="w-4/12">
                     <Paper elevation={3} style={{padding: '2em', marginTop: '2em'}}>
                         <Typography variant="h5" align="center">Create new account</Typography>
                         <form onSubmit={handleSubmit}>
@@ -61,11 +57,6 @@ export const RegisterPage = () => {
                             </Button>
                         </form>
                     </Paper>
-
-                </div>
-
-
-            </div>
         </>
 
 
