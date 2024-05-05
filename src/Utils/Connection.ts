@@ -11,7 +11,7 @@ export const fetchCpuData = async (type: string) => {
     const period_start = now.toISOString().split('.')[0];
 
     try {
-        const response = await axios.get<CpuData[] | RamData[]>(url + type + "?user_id=" + user_id, {
+        const response = await axios.get<CpuData[] | RamData[] | NetworkData[] | DiskData[]>(url + type + "?user_id=" + user_id, {
             params: {
                 period_start
             }

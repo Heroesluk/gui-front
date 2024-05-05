@@ -9,7 +9,8 @@ export interface RefreshingProps {
 }
 
 export const RefreshingCpuLineChart = (refresingProps: RefreshingProps) => {
-    const [data, setData] = useState<CpuData[] | RamData[]>([]);
+
+    const [data, setData] = useState<CpuData[] | RamData[] | DiskData[] | NetworkData[]>([]);
 
     useEffect(() => {
         const interval = setInterval(async () => {
@@ -18,7 +19,7 @@ export const RefreshingCpuLineChart = (refresingProps: RefreshingProps) => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [refresingProps.type]);
 
 
     if (refresingProps.type === "CPU") {
@@ -28,13 +29,21 @@ export const RefreshingCpuLineChart = (refresingProps: RefreshingProps) => {
         );
     } else if (refresingProps.type === "RAM") {
         return (
-            <CommonLineChart label="Ram usage in %" data={data} line_keywords={["used", "total"]}
+            <CommonLineChart label="Ram usage in MB/s" data={data} line_keywords={["used", "total"]}
                              colors={["#65F300", "#FF5900"]}></CommonLineChart>
         );
-
+    } else if (refresingProps.type === "DISK") {
+        return (
+            <CommonLineChart label="Disk usage in KB/s" data={data} line_keywords={["read", "sent"]}
+                             colors={["#65F300", "#FF5900"]}></CommonLineChart>
+        );
+    } else if (refresingProps.type === "NETWORK") {
+        return (
+            <CommonLineChart label="Network usage in KB/s" data={data} line_keywords={["recieved", "sent"]}
+                             colors={["#65F300", "#FF5900"]}></CommonLineChart>
+        );
     }
     ;
-
 }
 
 

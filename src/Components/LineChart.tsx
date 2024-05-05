@@ -40,3 +40,4 @@ export const CommonLineChart = (props: CommonUsageChartProps) => {
 
     );
 }
+

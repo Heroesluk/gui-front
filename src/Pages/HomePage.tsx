@@ -21,6 +21,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import InfoIcon from '@mui/icons-material/Info';
 import {useNavigate} from "react-router-dom";
+import {RefreshingCpuLineChart} from "../Components/RefreshingChart.tsx";
 
 const formatRamData = (data: RamData[]) => {
     return data.map(item => ({
@@ -138,16 +139,12 @@ export const Content = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-            <CommonLineChart label="Cpu usage in %" data={cpu_data} line_keywords={["usage"]}
-                             colors={colors}></CommonLineChart>
-            <CommonLineChart label="Disk read/write in kilobyes" data={disk_data} line_keywords={["read", "sent"]}
-                             colors={colors}></CommonLineChart>
-            <CommonLineChart label="Network sent/recieve in kilobytes" data={network_data}
-                             line_keywords={["recieved", "sent"]}
-                             colors={colors}></CommonLineChart>
-            <CommonLineChart label="Ram usage in kilobytes" data={formatRamData(ram_data)} line_keywords={["used"]}
-                             colors={colors}></CommonLineChart>
+            <RefreshingCpuLineChart type="RAM"></RefreshingCpuLineChart>
+            <RefreshingCpuLineChart type="CPU"></RefreshingCpuLineChart>
+            <RefreshingCpuLineChart type="NETWORK"></RefreshingCpuLineChart>
+            <RefreshingCpuLineChart type="DISK"></RefreshingCpuLineChart>
         </div>
+
     </>
 
 
