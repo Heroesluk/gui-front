@@ -1,6 +1,7 @@
+import {RefreshingCpuLineChart} from "../Components/RefreshingChart.tsx";
 
 
-export const DashboardPage  = () => {
-    return <h1>Dashboard</h1>;
+export const DashboardPage = () => {
+    return <><RefreshingCpuLineChart type="CPU"/></>;
 }
 

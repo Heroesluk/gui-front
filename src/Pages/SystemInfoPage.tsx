@@ -14,8 +14,6 @@ import {useState} from "react";
 export const SystemInfoComponent = () => {
     const dt: SystemInfo = mockData
     const pcList: SystemInfo[] = [dt, mockData2]
-
-
     const [curentPC, setCurrentPC] = useState<SystemInfo>(dt)
 
     const setCurrentFromId = (pc: string) => {
@@ -23,7 +21,8 @@ export const SystemInfoComponent = () => {
         pcList.forEach((item) => {
             if (item.node === pc) {
                 setCurrentPC(item)
-            }``
+            }
+            ``
         })
     }
 
