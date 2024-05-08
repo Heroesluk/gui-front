@@ -7,16 +7,16 @@ interface CommonUsageChartProps {
     line_keywords: string[]
     colors: string[]
     label: string
+    height: number
+    width: number
 }
 
 export const CommonLineChart = (props: CommonUsageChartProps) => {
     const data = formatData(props.data)
-    console.log(data)
-    console.log("dziala")
 
     return (
         <div className="">
-            <LineChart width={580} height={400} data={data} margin={{bottom: 30, right: 0, left: 20}}>
+            <LineChart width={props.width} height={props.height} data={data} margin={{bottom: 30, right: 0, left: 20}}>
                 {props.line_keywords.map((keyword, index) =>
                     <Line
                         isAnimationActive={false}
